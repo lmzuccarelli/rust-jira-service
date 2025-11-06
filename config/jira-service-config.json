@@ -3,5 +3,8 @@
 	"description": "A jira (read only) service wriiten in Rust",
 	"log_level": "debug",
 	"base_url": "https://issues.redhat.com/rest/api/2/issue/",
-	"api_key_path" :"/home/luzuccar/.jira/token"
+	"api_key_path" :"/home/luzuccar/.jira/token",
+	"working_dir" :"/home/luzuccar/Projects/aichat-workspace",
+	"document_name" :"biweekly-report.md",
+	"test": false
 }

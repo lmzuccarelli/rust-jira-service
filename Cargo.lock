@@ -1007,9 +1007,10 @@ checksum = "4a5f13b858c8d314ee3e8f639011f7ccefe71f97f96e50151fb991f267928e2c"
 
 [[package]]
 name = "jira-service"
-version = "0.2.4"
+version = "0.2.12"
 dependencies = [
  "async-trait",
+ "chrono",
  "clap",
  "custom-logger",
  "http-body-util",

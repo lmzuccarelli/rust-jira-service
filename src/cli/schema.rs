@@ -15,6 +15,7 @@ pub struct Cli {
     #[arg(short, long, value_name = "config")]
     pub config: String,
 
-    #[arg(short, long, value_name = "issue")]
-    pub issue: String,
+    /// comma delimted list of issues (WRIG-A,WRIG-B)
+    #[arg(short, long, value_name = "issues")]
+    pub issues: String,
 }

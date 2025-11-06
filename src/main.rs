@@ -1,6 +1,6 @@
 use crate::cli::schema::Cli;
 use crate::config::load::{ConfigInterface, ImplConfigInterface};
-use crate::handlers::process::{Service, ServiceInterface};
+use crate::handlers::service::{Service, ServiceInterface};
 use clap::Parser;
 use custom_logger as log;
 
@@ -43,7 +43,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     log::info!("author      : {}", env!("CARGO_PKG_AUTHORS"));
     log::info!("version     : {}", env!("CARGO_PKG_VERSION"));
 
-    let res = Service::execute(params.unwrap(), args.issue).await;
+    let res = Service::execute(params.unwrap(), args.issues).await;
     match res {
         Ok(result) => {
             println!("{}", result);

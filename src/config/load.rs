@@ -8,6 +8,9 @@ pub struct Parameters {
     pub log_level: String,
     pub base_url: String,
     pub api_key_path: String,
+    pub working_dir: String,
+    pub document_name: String,
+    pub test: bool,
 }
 
 pub trait ConfigInterface {
